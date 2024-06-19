@@ -1,19 +1,21 @@
 ---
+import Layout from "@layouts/Layout.astro"
 const pageTitle = "Vincenzo Fehring"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-	</head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-    <a href="/about">About</a>
-    <h1>{pageTitle}</h1>
-	</body>
-</html>
+<Layout pageTitle={pageTitle}>
+  <h1>Vincenzo Fehring</h1>
+  <h2>About</h2>
+  <p>
+    As a software developer with expertise in Go and TypeScript,
+    I bring a unique set of skills to any development team.
+    What sets me apart from others in my field is my strong communication skills,
+    which enable me to collaborate effectively with colleagues and clients alike.
+  </p>
+  <p>
+    Currently, I am targeting a full-stack developer role where I can leverage my
+    experience and skills to build robust and innovative solutions for clients.
+    If you're looking for a developer who can bring both technical expertise
+    and strong communication skills to your team, please don't hesitate to reach out!
+  </p>
+</Layout>
