@@ -1,5 +1,6 @@
 ---
 const pageTitle = "Blog"
+const allPosts = await Astro.glob('./posts/*.md')
 ---
 
 <html lang="en">
@@ -18,7 +19,7 @@ const pageTitle = "Blog"
     <h1>{pageTitle}</h1>
     <p>This is where you will find my blog posts.</p>
     <ul>
-      <li><a href="/posts/working-with-legacy-code">Working with Legacy Code</a></li>
+      {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
     </ul>
 	</body>
 </html>
