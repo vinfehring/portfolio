@@ -5,6 +5,7 @@ const pageTitle = "Vincenzo Fehring"
 
 <Layout pageTitle={pageTitle}>
   <h1>Vincenzo Fehring</h1>
+  <small>Creator of Things (Developer)</small>
   <h2>About</h2>
   <p>
     As a software developer with expertise in Go and TypeScript,
@@ -18,4 +19,26 @@ const pageTitle = "Vincenzo Fehring"
     If you're looking for a developer who can bring both technical expertise
     and strong communication skills to your team, please don't hesitate to reach out!
   </p>
+  <h2>Skills</h2>
+  <div class="link-images">
+    <img width="46" height="46" alt="Go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+    <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
+  </div>
+  <h2>Interests</h2>
+  <p>
+    In my free time, I enjoy reading, gaming, spending time with my family, and listening to music.
+  </p>
 </Layout>
+<style>
+  .link-images img {
+    margin: 16px 4px 4px 4px
+  }
+  @media only screen and (max-width: 600px) {
+    .link-images img {
+      height: 30px;
+      width: 30px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+</style>
