@@ -1,5 +1,12 @@
 ---
-
+const pageTitle = "About Me"
+const identity = {
+firstName: "Vincenzo",
+country: "USA",
+occupation: "Software Developer",
+hobbies: ["music", "comics", "comedy", "reading", "movies"],
+skills: ["Go"]
+}
 ---
 
 <html lang="en">
@@ -8,18 +15,27 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+    <title>{pageTitle}</title>
 	</head>
   <body>
     <a href="/">Home</a>
     <a href="/blog">Blog</a>
     <a href="/about">About</a>
 
-    <h1>About Me</h1>
+    <h1>{pageTitle}</h1>
     <h2>... and my ramblings</h2>
 
-    <p>I like to build things, and this is my way of being able to share those things with you.</p>
-
-    <p>This site will update and contain ramblings, thoughts, reflections, learning, and other content as I progress through this crazy little thing called.... life.</p>
+    <p>Here are a few facts about me:</p>
+    <ul>
+      <li>My name is {identity.firstName}.</li>
+      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+      {identity.hobbies.length >= 2 &&
+        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+        }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+      {skills.map((skill) => <li>{skill})}
+    </ul>
 	</body>
 </html>
