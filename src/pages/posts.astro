@@ -1,0 +1,49 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Card from '@components/Card.astro';
+const pageTitle = "Posts"
+---
+<Layout pageTitle={pageTitle}>
+  <h2>Blog</h2>
+  <ul role="list" class="link-card-grid">
+    <Card
+      href="#"
+      image="/blog.png"
+      title="Blog 1"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+    <Card
+      href="#"
+      image="/blog.png"
+      title="Blog 2"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+    <Card
+      href="#"
+      image="/blog.png"
+      title="Blog 3"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+    <Card
+      href="#"
+      image="/blog.png"
+      title="Blog 4"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+  </ul>
+  <h2>YouTube</h2>
+  <ul role="list" class="link-card-grid">
+    <Card
+      href="#"
+      image="/youtube.png"
+      title="Video 1"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+    <Card
+      href="#"
+      image="/youtube.png"
+      title="Video 2"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+  </ul>
+</Layout>
