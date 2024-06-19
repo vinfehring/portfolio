@@ -8,7 +8,7 @@ const pageTitle = "Vincenzo Fehring"
   <small>Creator of Things (Developer)</small>
   <h2>About</h2>
   <p>
-    As a software developer with expertise in Go and TypeScript,
+    As a software developer with over 25 years of self-taught expertise in a multitude of programming languages and technologies,
     I bring a unique set of skills to any development team.
     What sets me apart from others in my field is my strong communication skills,
     which enable me to collaborate effectively with colleagues and clients alike.
@@ -19,6 +19,11 @@ const pageTitle = "Vincenzo Fehring"
     If you're looking for a developer who can bring both technical expertise
     and strong communication skills to your team, please don't hesitate to reach out!
   </p>
+  <div class="button">
+    <a href="/work">
+      <button>My Portfolio</button>
+    </a>
+  </div>
   <h2>Skills</h2>
   <div class="link-images">
     <img width="46" height="46" alt="Go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
@@ -36,15 +41,46 @@ const pageTitle = "Vincenzo Fehring"
   </p>
 </Layout>
 <style>
-  .link-images img {
-    margin: 16px 4px 4px 4px
+  /* small */
+  small {
+    background-color: #584966;
+    border-radius: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding: 0.3em 0.6em 0.2em;
   }
+
+  /* Button */
+  button {
+    background-color: #1e1e2e;
+    border: 2px solid #78c2ad;
+    border-radius: 8px;
+    color: #78c2ad;
+    font: 600 16px 'Josefin Sans', sans-serif;
+    padding: 8px 16px;
+    transition: background-color 0.4s, color 0.4s;
+  }
+
+  button:hover {
+    background-color: #78c2ad;
+    color: #fdebf3;
+    cursor: pointer;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  /* Skill images */
+  .link-images img {
+    margin: 16px 4px;
+  }
+
   @media only screen and (max-width: 600px) {
     .link-images img {
       height: 30px;
       width: 30px;
-      margin-left: 2px;
-      margin-right: 2px;
+      margin: 16px 1px;
     }
   }
 </style>
