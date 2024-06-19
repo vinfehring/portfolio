@@ -1,11 +1,12 @@
 ---
 const pageTitle = "About Me"
 const identity = {
-firstName: "Vincenzo",
-country: "USA",
-occupation: "Software Developer",
-hobbies: ["music", "comics", "comedy", "reading", "movies"],
-skills: ["Go"]
+  firstName: "Vincenzo",
+  country: "USA",
+  occupation: "Software Developer",
+  hobbies: ["music", "comics", "comedy", "reading", "movies", "gaming"],
+  skills: ["Go"],
+  operatingSystem: "Arch Linux"
 }
 ---
 
@@ -32,10 +33,11 @@ skills: ["Go"]
       {identity.hobbies.length >= 2 &&
         <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
         }
+      <li>I use {identity.operatingSystem} by the way.</li>
     </ul>
     <p>My skills are:</p>
     <ul>
-      {skills.map((skill) => <li>{skill})}
+      {identity.skills.map((skill) => <li>{skill}</li>)}
     </ul>
 	</body>
 </html>
